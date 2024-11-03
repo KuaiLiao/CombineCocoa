@@ -5,12 +5,15 @@ Pod::Spec.new do |s|
     s.description      = <<-DESC
     Combine publisher bridges for Cocoa Controls (UIControl) in UIKit
     DESC
-    s.homepage         = "https://github.com/freak4pc/CombineCocoa"
+    s.homepage         = "https://github.com/CombineCommunity/CombineCocoa"
     s.license          = 'MIT'
     s.author           = { "Shai Mishali" => "freak4pc@gmail.com" }
-    s.source           = { :git => "https://github.com/freak4pc/CombineCocoa.git", :tag => s.version.to_s }
+    s.source           = { :git => "https://github.com/CombineCommunity/CombineCocoa.git", :tag => s.version.to_s }
   
     s.requires_arc     = true
+    s.prefix_header_file = false
+    s.header_dir       = './'
+    s.module_name      = s.name
   
     s.ios.deployment_target     = '10.0'
   
